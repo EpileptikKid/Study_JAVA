@@ -81,4 +81,10 @@ public class ArrayClass<T> {
         return temp;
     }
 
+    public static <T> void addNumbers(ArrayClass<T> list, Integer[] arr2) {
+        for (Integer integer : arr2) {
+            list.add((T) integer);
+        }
+    }
+
 }
