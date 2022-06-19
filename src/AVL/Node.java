@@ -1,6 +1,4 @@
-package Tree;
-
-
+package AVL;
 import com.sun.istack.internal.NotNull;
 
 public class Node<T extends Comparable<T>> {
@@ -8,6 +6,16 @@ public class Node<T extends Comparable<T>> {
     @NotNull private T data;
     private Node<T> leftChild;
     private Node<T> rightChild;
+
+    private int height = 1;
+
+    public void setHeight(int i) {
+        height = i;
+    }
+
+    public int getHeight() {
+        return height;
+    }
 
     public Node(T data) {
         this.data = data;
@@ -42,3 +50,4 @@ public class Node<T extends Comparable<T>> {
         return String.valueOf(this.getData());
     }
 }
+
