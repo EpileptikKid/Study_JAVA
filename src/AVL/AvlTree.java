@@ -1,8 +1,6 @@
 package AVL;
 
 
-import java.util.Map;
-
 public class AvlTree<T extends Comparable<T>> implements Tree<T> {
     private Node<T> root;
 
@@ -49,19 +47,19 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
     }
 
     @Override
-    public Tree<T> insert(T data) {
-        root = insert(data, root);
+    public Tree<T> insert(T data, String data2) {
+        root = insert(data, root, data2);
         return this;
     }
 
-    private Node<T> insert(T data, Node<T> node) {
+    private Node<T> insert(T data, Node<T> node, String data2) {
         if (node == null) {
-            return new Node<>(data);
+            return new Node<>(data, data2);
         }
         if (data.compareTo(node.getData()) < 0) {
-            node.setLeftChild(insert(data, node.getLeftChild()));
+            node.setLeftChild(insert(data, node.getLeftChild(), data2));
         } else if (data.compareTo(node.getData()) > 0) {
-            node.setRightChild(insert(data, node.getRightChild()));
+            node.setRightChild(insert(data, node.getRightChild(), data2));
         } else {
             return node;
         }
@@ -151,23 +149,25 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
     }
 
     public static void main(String[] args) {
-        AvlTree<Integer> tree = new AvlTree<Integer>();
-        tree.insert(1);
-        tree.insert(2);
-        tree.insert(3);
-        tree.insert(4);
-        tree.insert(5);
-        tree.insert(6);
-        tree.insert(7);
-        tree.insert(8);
-        tree.insert(9);
-        tree.insert(10);
-        tree.insert(11);
-        tree.insert(12);
-        tree.insert(13);
-        tree.insert(14);
-        tree.insert(15);
+        AvlTree<Integer> tree = new AvlTree<>();
+        tree.insert(1, "abo");
+        tree.insert(2, "abt");
+        tree.insert(3, "abf");
+        tree.insert(4, "abf");
+        tree.insert(5, "abf i");
+        tree.insert(6, "abs");
+        tree.insert(7, "abuse");
+        tree.insert(8, "above");
+        tree.insert(9, "abs");
+        tree.insert(10, "abate");
+        tree.insert(11, "level");
+        tree.insert(12, "tabview");
+        tree.insert(13, "abs");
+        tree.insert(14, "biff");
+        tree.insert(15, "abusive");
+        tree.delete(4);
 
+        tree.traverse();
         System.out.println(tree.root.getLeftChild());
     }
 

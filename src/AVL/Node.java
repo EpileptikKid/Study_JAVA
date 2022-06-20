@@ -4,6 +4,7 @@ import com.sun.istack.internal.NotNull;
 public class Node<T extends Comparable<T>> {
 
     @NotNull private T data;
+    private String dataString;
     private Node<T> leftChild;
     private Node<T> rightChild;
 
@@ -17,8 +18,8 @@ public class Node<T extends Comparable<T>> {
         return height;
     }
 
-    public Node(T data) {
-        this.data = data;
+    public Node(T data, String dataString) {
+        this.data = data; this.dataString = dataString;
     }
 
     public Node<T> getLeftChild() {
@@ -45,9 +46,17 @@ public class Node<T extends Comparable<T>> {
         this.data = data;
     }
 
+    public String getDataString() {
+        return dataString;
+    }
+
+    public void setDataString(String dataString) {
+        this.dataString = dataString;
+    }
+
     @Override
     public String toString() {
-        return String.valueOf(this.getData());
+        return this.getData() + " " + this.getDataString();
     }
 }
 
