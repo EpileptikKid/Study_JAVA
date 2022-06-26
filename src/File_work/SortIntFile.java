@@ -9,8 +9,8 @@ import java.util.Queue;
 public class SortIntFile {
     public static void main(String[] args) {
         Queue<Integer> arr = new PriorityQueue<>();
-        try (DataInputStream in1 = new DataInputStream(Files.newInputStream(Paths.get("src/File_work/file0.dat")));
-             DataInputStream in2 = new DataInputStream(Files.newInputStream(Paths.get("src/File_work/file1.dat")))) {
+        try (DataInputStream in1 = new DataInputStream(Files.newInputStream(Paths.get("src/File_work/file20.dat")));
+             DataInputStream in2 = new DataInputStream(Files.newInputStream(Paths.get("src/File_work/file21.dat")))) {
 
             try {
                 while (true) {
