@@ -11,6 +11,10 @@ public class AcademicGroup implements Serializable {
         return name;
     }
 
+    public Student[] getGroup() {
+        return group;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
