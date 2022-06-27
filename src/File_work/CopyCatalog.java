@@ -13,7 +13,7 @@ public class CopyCatalog {
         Files.createDirectory(newPath);
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(oldPath)){
             for (Path p : ds) {
-                Files.copy(Paths.get(oldPath + "\\" + p.getFileName()), Paths.get(newPath + "\\" + p.getFileName()));
+                Files.move(Paths.get(oldPath + "\\" + p.getFileName()), Paths.get(newPath + "\\" + p.getFileName()));
             }
         }
     }
