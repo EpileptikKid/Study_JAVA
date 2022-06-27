@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Windows-1251" ?>
+<Students>
+    <Student Name="Джон" Surname="Смит">
+        <Marks>
+            <Mark Subject="Математика" Value="4"/>
+            <Mark Subject="Физика" Value="5"/>
+            <Mark Subject="Программирование" Value="3"/>
+        </Marks>
+        <Comments>
+            Не наш студент
+        </Comments>
+    </Student>
+    <Student Name="Алина" Surname="Волосковец">
+        <Marks>
+            <Mark Subject="Математика" Value="2"/>
+            <Mark Subject="Физика" Value="2"/>
+            <Mark Subject="Программирование" Value="2"/>
+        </Marks>
+        <Comments>
+            Наш студент
+        </Comments>
+    </Student>
+    <Student Name="Андрей" Surname="Волосковец">
+        <Marks>
+            <Mark Subject="Математика" Value="5"/>
+            <Mark Subject="Физика" Value="5"/>
+            <Mark Subject="Программирование" Value="5"/>
+        </Marks>
+        <Comments>
+            Наш студент
+        </Comments>
+    </Student>
+</Students>
