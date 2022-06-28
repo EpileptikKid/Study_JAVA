@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CityData Name="Кропивницький">
+    <StreetsData>
+        <StreetData Name="Чміленка" Area="240" Population="13000" >
+            <OldNameData Name="Красноармєйська" />
+        </StreetData>
+        <StreetData Name="Перспективна" Area="140" Population="50000" >
+            <OldNameData Name="Карла Маркса" />
+        </StreetData>
+        <StreetData Name="Беляєва" Area="200" Population="100000" >
+            <OldNameData Name="Щорса" />
+        </StreetData>
+    </StreetsData>
+</CityData>
