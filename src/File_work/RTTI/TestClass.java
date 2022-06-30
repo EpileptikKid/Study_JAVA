@@ -5,4 +5,8 @@ public class TestClass {
     public String s = "123";
     private final String d = "qwe";
     public int b = 100;
+
+    public static void printClass() {
+        System.out.println("TestClass !!!");
+    }
 }
