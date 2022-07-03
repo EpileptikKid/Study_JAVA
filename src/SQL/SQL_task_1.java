@@ -1,7 +1,7 @@
 package SQL;
 import java.sql.*;
 
-public class test {
+public class SQL_task_1 {
     public static void main(String[] args) {
         try {
             String url = "jdbc:mysql://localhost/ms_db?serverTimezone=Europe/Kiev&useSSL=false&useUnicode=true&characterEncoding=utf-8";
