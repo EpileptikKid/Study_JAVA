@@ -10,7 +10,7 @@ public class task_5 {
         System.out.println("print method");
         String method = new Scanner(System.in).next();
         try {
-            Class<?> cls = Class.forName("File_work.ArrayX");
+            Class<?> cls = Class.forName("File_work.old.ArrayX");
             Method m = cls.getMethod(method);
             for (Annotation ann : m.getAnnotations()) {
                 System.out.println(ann);
