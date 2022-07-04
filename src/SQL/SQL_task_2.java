@@ -54,6 +54,7 @@ public class SQL_task_2 {
             prep.setString(1, "Пончик");
             prep.setInt(2, 19);
             prep.setInt(3, 77);
+            prep.addBatch();
             prep.executeBatch();
 
             prep = conn.prepareStatement("SELECT * FROM turnover"
