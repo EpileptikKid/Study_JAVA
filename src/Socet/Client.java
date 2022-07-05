@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Client {
     public static void main(String[] args) {
         // Указываем порт, к которому привязывается сервер
-        int serverPort = 7777;
+        int serverPort = 2000;
         // IP-адрес компьютера, где исполняется наша серверная программа
         String address = "192.168.1.174"; // адрес данного компьютера
         try {
